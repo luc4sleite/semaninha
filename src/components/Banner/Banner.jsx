@@ -54,7 +54,7 @@ const Banner = () => {
             <div 
                 key={slideIndex} 
                 onClick={() => goToSlide(slideIndex)} 
-                className="cursor-pointer hover:text-violet-500">
+                className="cursor-pointer hover:text-violet-500 text-cyan-950">
                 <ion-icon name="ellipse"></ion-icon>
             </div>
         ))}
