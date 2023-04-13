@@ -1,4 +1,3 @@
-import { Bars3Icon } from "@heroicons/react/20/solid"
 import MenuItems from "../MenuItems/MenuItems"
 import Button from "../Button/Button"
 import { useState } from "react"
@@ -15,10 +14,10 @@ const Navbar = () => {
                 <span>Semaninha</span>
             </div>
 
-            <div onClick={()=>setOpen(!open)}className="text-3xl absolute right-8 top-6 cursor-pointer sm:hidden">
+            <div onClick={()=>setOpen(!open)}className="text-3xl absolute right-8 top-4 cursor-pointer sm:hidden">
                 <ion-icon name={open ? 'close':'menu'}></ion-icon>
             </div>
-            <ul className={`sm:flex sm:items-center sm:gap-5 sm:pb-0 pb-12 absolute sm:static bg-white sm:z-auto z-[-1] left-0 w-full sm:w-auto sm:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 opacity-100':'top-[-490px]'} sm:opacity-100`}>
+            <ul className={`sm:flex sm:items-center sm:gap-5 sm:pb-0 pb-12 absolute sm:static bg-white sm:z-auto z-[-1] left-0 w-full sm:w-auto sm:pl-0 pl-9 shadow-lg sm:shadow-none transition-all duration-500 ease-in ${open ? 'top-16 opacity-100':'top-[-490px]'} sm:opacity-100`}>
                 <MenuItems title="Início"/>
                 <MenuItems title="FAQ"/>
                 <MenuItems title="Serviços"/>
