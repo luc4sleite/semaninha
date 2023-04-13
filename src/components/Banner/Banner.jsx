@@ -49,12 +49,12 @@ const Banner = () => {
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
         <ion-icon onClick={nextSlide} name="arrow-forward-outline"></ion-icon>
       </div>
-      <div className="flex top-4 justify-center py-2">
+      <div className="flex top-4 justify-center py-2 ">
         {slides.map((slide, slideIndex) => (
             <div 
                 key={slideIndex} 
                 onClick={() => goToSlide(slideIndex)} 
-                className="cursor-pointer">
+                className="cursor-pointer hover:text-violet-500">
                 <ion-icon name="ellipse"></ion-icon>
             </div>
         ))}
