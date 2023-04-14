@@ -1,18 +1,19 @@
-import Banner from "./components/Banner/Banner"
-import Button from "./components/Button/Button"
-import Header from "./components/Header/Header"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SignupPage from './pages/Signup';
+import LoginPage from "./pages/Login";
+import Home from "./pages/Home";
 
 const App = () => {
-  return <div className="w-screen">
-    <Header />
-    <Banner />
-    <div className="w-full flex flex-col items-center justify-center m-auto">
-      <h2 className="text-center px-5 mb-5 font-display text-cyan-950">
-        Para acessar nossos recursos você precisa entrar na sua conta. Caso não tenha uma conta, clique em cadastrar.
-      </h2>
-      <Button />
+  return <div className="min-h-full h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-md w-full space-y-8">
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<LoginPage/>} />
+            <Route path="/signup" element={<SignupPage/>} />
+            <Route path="/home" element={<Home/>} />
+        </Routes>
+      </BrowserRouter>
     </div>
-    
   </div>
 }
 
