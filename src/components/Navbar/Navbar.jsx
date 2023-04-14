@@ -22,7 +22,7 @@ const Navbar = () => {
                 <MenuItems title="FAQ"/>
                 <MenuItems title="Serviços"/>
                 <MenuItems title="Contato"/>
-                <Button />
+                <Button name="Sair" />
             </ul>
 
             

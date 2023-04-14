@@ -21,7 +21,7 @@ const Login = () => {
     }
 
     const authenticateUser = () => {
-
+        
     }
     
     return <form className="mt-8 space-y-6">
